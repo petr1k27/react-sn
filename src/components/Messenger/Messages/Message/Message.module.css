@@ -1,0 +1,8 @@
+.item {
+    padding-top: 10px;
+    color: white;
+    background: #bd9773;
+    border-radius: 40px;
+    height: auto;
+    width: fit-content;
+}

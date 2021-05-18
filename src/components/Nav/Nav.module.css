@@ -1,0 +1,42 @@
+.nav {
+    margin-left: 27vw;
+    grid-area: n;
+    background-color: #b8b8b8;
+    border-radius: 20px;
+    height: 210px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-column-gap: 10px;
+    margin: 10px;
+
+}
+
+.item img {
+    display: block;
+    height: 29px;
+}
+
+.item a {
+    width: 100px;
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+}
+
+.item a.active {
+    font-weight: bold;
+    color: gold;
+}
+
+.friends {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+
+}
+.nav h1 {
+    margin-left: 20px;
+    color: #000000;
+}

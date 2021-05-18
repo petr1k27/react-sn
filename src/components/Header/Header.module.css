@@ -1,0 +1,20 @@
+.header {
+    background-color: #ffffff;
+    grid-area: h;
+    margin: 0px;
+}
+
+.header img {
+    margin-left: 27vw;
+    height: 50px;
+
+}
+
+.authBlock {
+    float: right;
+}
+
+.authBlock a {
+    color: #000000;
+}
+

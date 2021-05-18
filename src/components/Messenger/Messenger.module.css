@@ -1,0 +1,15 @@
+.messenger {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+}
+
+.dialogs {
+    padding: 10px;
+    background: #bd9773;
+}
+
+.messages {
+    border: 10px;
+}
+

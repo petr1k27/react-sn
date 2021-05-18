@@ -1,0 +1,17 @@
+.friendAva img {
+    width: 50px;
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.friendName{
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.friend {
+    margin: 10px;
+}
