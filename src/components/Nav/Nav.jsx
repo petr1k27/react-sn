@@ -1,13 +1,12 @@
 import s from './Nav.module.css'
 import {NavLink} from "react-router-dom";
-import Friend from "./Friend/Friend";
 import profile from '../../assets/images/profile.svg'
 import messenger from '../../assets/images/messenger.svg'
 import users from '../../assets/images/users.svg'
 import music from '../../assets/images/music.svg'
 import settings from '../../assets/images/settings.svg'
 
-const Nav = (props) => {
+const Nav = () => {
     return (
         <nav className={s.nav}>
             <div className={s.item}>
@@ -30,19 +29,6 @@ const Nav = (props) => {
                 <img src={settings} alt={'settings'}/>
                 <NavLink to="/settings" activeClassName={s.active}>Settings</NavLink>
             </div>
-            {/*<h1>Friends</h1>*/}
-            {/*<div className={s.friends}>*/}
-
-            {/*    <div className={s.friend}>*/}
-            {/*        <Friend name={'Julia'} id={'1'}/>*/}
-            {/*    </div>*/}
-            {/*    <div className={s.friend}>*/}
-            {/*        <Friend name={'Pasha'} id={'2'}/>*/}
-            {/*    </div>*/}
-            {/*    <div className={s.friend}>*/}
-            {/*        <Friend name={'Mama'}  id={'3'}/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </nav>
     );
 }

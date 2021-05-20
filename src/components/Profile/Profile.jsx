@@ -1,9 +1,7 @@
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
-import {updateUserStatus} from "../../redux/profile-reducer";
 
 const Profile = (props) => {
-    debugger;
     return (
         <div>
             <div>
