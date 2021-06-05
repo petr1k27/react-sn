@@ -1,14 +1,9 @@
 import React from "react";
 import Header from "./Header";
 import {connect} from "react-redux";
-import {signIn} from "../../redux/authReducer";
+import {signOut} from "../../redux/authReducer";
 
 class HeaderContainer extends React.Component {
-
-    componentDidMount() {
-        this.props.signIn();
-    }
-
     render() {
         return(
             <Header {...this.props} />
@@ -25,4 +20,4 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {signIn})(HeaderContainer);
+export default connect(mapStateToProps, {signOut})(HeaderContainer);

@@ -1,6 +1,8 @@
 import s from './Messenger.module.css'
 import MessagesContainer from "./Messages/MessagesContainer";
 import DialogsContainer from "./Dialogs/DialogsContainer";
+import {compose} from "redux";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 
 const Messenger = () => {
     return (
@@ -15,4 +17,4 @@ const Messenger = () => {
     )
 }
 
-export default Messenger;
+export default compose(withAuthRedirect)(Messenger);

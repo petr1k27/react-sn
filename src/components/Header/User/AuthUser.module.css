@@ -1,0 +1,10 @@
+.authUserBlock {
+    margin-top: 7px;
+    width: 150px;
+}
+.login {
+    margin-right: 10px;
+}
+form {
+    display: inline-block;
+}
