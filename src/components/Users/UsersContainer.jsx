@@ -5,24 +5,31 @@ import {
     setCurrentUsersPage,
     setIsFetching,
     setTotalCount,
-    setUsers, setFollowingIsProgress, getUsers,
+    setUsers, setFollowingIsProgress, requestUsers,
 } from "../../redux/users-reducer";
 import React from "react";
 import Users from "./Users";
 import Preloader from "../common/Preloader/Preloader";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
+import {
+    getCountUsersOnPage,
+    getCurrentUsersPage,
+    getFollowingIsProgress,
+    getIsFetching,
+    getTotalCount, getUsers
+} from "../../redux/users-selectors";
 
 
 class usersContainer extends React.Component {
 
     componentDidMount() {
-        this.props.getUsers(this.props.currentUsersPage, this.props.countUsersOnPage);
+        this.props.requestUsers(this.props.currentUsersPage, this.props.countUsersOnPage);
     }
 
 
     onPageChanged = (currentPage) => {
-        this.props.getUsers(currentPage, this.props.countUsersOnPage);
+        this.props.requestUsers(currentPage, this.props.countUsersOnPage);
     };
 
     render() {
@@ -47,12 +54,12 @@ class usersContainer extends React.Component {
 let mapStateToProps = (state) => {
     return (
         {
-            users: state.userPage.users,
-            currentUsersPage: state.userPage.currentUsersPage,
-            countUsersOnPage: state.userPage.countUsersOnPage,
-            totalCount: state.userPage.totalCount,
-            isFetching: state.userPage.isFetching,
-            followingIsProgress: state.userPage.followingIsProgress,
+            users: getUsers(state),
+            currentUsersPage: getCurrentUsersPage(state),
+            countUsersOnPage: getCountUsersOnPage(state),
+            totalCount: getTotalCount(state),
+            isFetching: getIsFetching(state),
+            followingIsProgress: getFollowingIsProgress(state),
         }
     )
 };
@@ -65,7 +72,7 @@ export default compose(
         setTotalCount,
         setIsFetching,
         setFollowingIsProgress,
-        getUsers,
+        requestUsers,
     }),
     withAuthRedirect)(usersContainer);
 
