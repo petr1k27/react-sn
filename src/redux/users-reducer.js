@@ -15,7 +15,7 @@ let initialState = {
         // {id: 1, followed: true, name: 'Pasha', status: 'I love my E39', location: 'Belarus, Baranovichi'},
     ],
     currentUsersPage: 1,
-    countUsersOnPage: 5,
+    countUsersOnPage: 10,
     totalCount: 0,
     isFetching: false,
     followingIsProgress: [],
