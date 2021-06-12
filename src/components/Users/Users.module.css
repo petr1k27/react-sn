@@ -1,4 +1,4 @@
-.selectedPage {
-    font-size: large;
-    font-weight: bold;
+.paginator {
+    margin-top: 15px;
+    margin-left: auto;
 }

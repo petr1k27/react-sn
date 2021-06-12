@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 const User = (props) => {
     return (
-        <div>
+        <div className={s.item}>
             <div >
                 <NavLink to={`/profile/${props.id}`}>
                     <img className={s.userLogo}

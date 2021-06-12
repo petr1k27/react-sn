@@ -1,12 +1,13 @@
 import User from "./User/User";
 import Paginator from "../common/Paginator/Paginator"
+import s from './Users.module.css'
 
 
 const Users = (props) => {
 
     return (
         <div>
-            <div>
+            <div className={s.paginator}>
                 <Paginator
                     totalItemsCount={props.totalCount}
                     pageSize={props.countUsersOnPage}

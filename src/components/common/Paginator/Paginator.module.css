@@ -1,13 +1,21 @@
 .paginator {
+    height: 27px;
     margin: 10px;
+    padding: 12px 20px;
+    border-radius: 40px;
+    background-color: #b8b8b8;
+    width: fit-content;
 }
 
 .pageNumber {
-    padding: 2px;
-    border: 1px solid grey;
+    margin-left: 5px;
+    height: 20px;
+    width: 100px;
+    padding: 5px;
 }
 
 .pageNumber.selectedPage {
     font-weight: bold;
-    border-color: black;
+    color: gold;
+
 }

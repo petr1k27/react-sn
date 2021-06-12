@@ -10,7 +10,7 @@
 }
 
 .app-wrapper-content {
-  height: 96vh;
+
   grid-area: c;
   background-color: white;
   border-radius: 20px;
