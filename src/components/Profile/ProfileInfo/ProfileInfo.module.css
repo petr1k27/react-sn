@@ -4,18 +4,21 @@
 }
 
 .header {
-    height: 70px;
+    height: 200px;
 }
 
 .profileInfo {
     border-radius: 20px;
     background-color: #b8b8b8;
     margin-bottom: 20px;
-
 }
 
 .userName {
     font-family: Calibri, serif;
     font-size: large;
     font-weight: bold;
+}
+
+.userPhoto {
+    width: 150px;
 }
